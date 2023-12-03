@@ -18,6 +18,17 @@ class DashboardController extends Controller
         // Default view for users
         return view('dashboard');
     }
+    public function home()
+    {
+        $user = Auth::user();
+
+        if ($user->hasRole('admin')) {
+            return view('home');
+        }
+
+        // Default view for users
+        return view('home');
+    }
     public function fourm()
     {
         $user = Auth::user();

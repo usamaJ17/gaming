@@ -42,18 +42,67 @@
         </div>
     
         <!-- Main Content Area -->
-        <div class="w-2/3">
-            <div class="py-12 max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="">
+            <div class="py-6 max-w-full mx-auto sm:px-1 lg:px-2">
                 <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg p-6">
-                    <p class="text-gray-900 dark:text-gray-100">
-                        {{ __("You're logged in!") }}
-                    </p>
+                    <!-- Replace "You're logged in!" with an image -->
+                    <div class="flex items-center justify-between mb-4">
+                        <!-- Replace the URL inside src attribute with the actual image URL -->
+                        <img src="{{ asset('images/banner.jpg') }}" alt="Custom Image" class="w-full h-auto rounded">
+                    </div>
                 </div>
             </div>
+            <div class="max-w-full mx-auto sm:px-1 lg:px-2 flex justify-between">
+
+                <!-- Image 1 -->
+                <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg p-2">
+                    <img src="{{ asset('images/1.jpg') }}" alt="Image 1" class="w-full h-auto rounded">
+                </div>
+            
+                <!-- Image 2 -->
+                <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg p-2">
+                    <img src="{{ asset('images/2.jpg') }}" alt="Image 2" class="w-full h-auto rounded">
+                </div>
+            
+                <!-- Image 3 -->
+                <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg p-2">
+                    <img src="{{ asset('images/3.jpg') }}" alt="Image 3" class="w-full h-auto rounded">
+                </div>
+            
+                <!-- Image 4 -->
+                <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg p-2">
+                    <img src="{{ asset('images/1.jpg') }}" alt="Image 4" class="w-full h-auto rounded">
+                </div>
+            
+            </div>
+
+            <!-- New Menu Section with Styled Items -->
+<div class="max-w-full mx-auto sm:px-1 lg:px-2 mt-4 flex justify-center">
+
+    <!-- Menu Item 1 -->
+    <div class="cursor-pointer mx-4">
+        <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-indigo-500 transition duration-300">Item 1</a>
+    </div>
+
+    <!-- Menu Item 2 -->
+    <div class="cursor-pointer mx-4">
+        <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-indigo-500 transition duration-300">Item 2</a>
+    </div>
+
+    <!-- Menu Item 3 -->
+    <div class="cursor-pointer mx-4">
+        <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-indigo-500 transition duration-300">Item 3</a>
+    </div>
+
+    <!-- Menu Item 4 -->
+    <div class="cursor-pointer mx-4">
+        <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-indigo-500 transition duration-300">Item 4</a>
+    </div>
+
+</div>
+
+            
         </div>
     </div>
-    
-    
-    
     
 </x-app-layout>

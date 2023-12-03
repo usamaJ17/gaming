@@ -12,26 +12,20 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('home')" :active="request()->routeIs('home')">
+                    <x-nav-link :href="route('user_profile')" :active="request()->routeIs('user_profile')">
                         {{ __('Home') }}
                     </x-nav-link>
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('News Center') }}
+                        {{ __('History') }}
                     </x-nav-link>
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('TheVFA Network') }}
+                        {{ __('Awards') }}
                     </x-nav-link>
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Leagues & Cups') }}
+                        {{ __('History') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Stats Center') }}
-                    </x-nav-link>
-                    <x-nav-link :href="route('myoffice')" :active="request()->routeIs('myoffice')">
-                        {{ __('My Office') }}
-                    </x-nav-link>
-                    <x-nav-link :href="route('fourm')" :active="request()->routeIs('fourm')">
-                        {{ __('VFA Shop') }}
+                    <x-nav-link :href="route('profile.edit')" :active="request()->routeIs('profile.edit')">
+                        {{ __('Setting') }}
                     </x-nav-link>
                 </div>
             </div>

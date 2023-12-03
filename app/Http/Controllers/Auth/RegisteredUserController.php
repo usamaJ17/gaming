@@ -21,7 +21,13 @@ class RegisteredUserController extends Controller
      */
     public function create(): View
     {
-        return view('auth.register');
+        $asset_url = asset('images');
+        $selectOptions = [
+            'pc' => ['label' => 'PC', 'image' => '<img src="/images/ps.png" alt="PC Icon" class="w-4 h-4 mr-2">'],
+            'xbox' => ['label' => 'XBOX', 'image' => '<img src="/images/ps.png" alt="XBOX Icon" class="w-4 h-4 mr-2">'],
+            'playstation' => ['label' => 'PLAYSTATION', 'image' => '<img src="/images/ps.png" alt="PlayStation Icon" class="w-4 h-4 mr-2">'],
+        ];
+        return view('auth.register')->with(compact('selectOptions'));
     }
 
     /**
@@ -40,6 +46,7 @@ class RegisteredUserController extends Controller
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
+            'platform' => $request->platform,
             'password' => Hash::make($request->password),
         ]);
         $user
@@ -49,7 +56,6 @@ class RegisteredUserController extends Controller
         event(new Registered($user));
 
         Auth::login($user);
-
-        return redirect(RouteServiceProvider::HOME);
+        return redirect(RouteServiceProvider::U_HOME);
     }
 }

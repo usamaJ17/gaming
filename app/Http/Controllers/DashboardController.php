@@ -29,6 +29,17 @@ class DashboardController extends Controller
         // Default view for users
         return view('home');
     }
+    public function myoffice()
+    {
+        $user = Auth::user();
+
+        if ($user->hasRole('admin')) {
+            return view('user.myoffice');
+        }
+
+        // Default view for users
+        return view('user.myoffice');
+    }
     public function fourm()
     {
         $user = Auth::user();
@@ -39,5 +50,16 @@ class DashboardController extends Controller
 
         // Default view for users
         return view('dashboard');
+    }
+    public function userProfile()
+    {
+        $user = Auth::user();
+
+        if ($user->hasRole('admin')) {
+            return view('user.user_profile');
+        }
+
+        // Default view for users
+        return view('user.user_profile');
     }
 }

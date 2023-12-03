@@ -12,6 +12,7 @@
                 <div class="absolute inset-0 bg-black opacity-70"></div>
                 <div class="p-0 text-gray-900 dark:text-gray-100 relative z-10"> {{-- Set p-0 to remove padding --}}
                     <img src="{{ asset('images/background.jpg') }}" alt="Logged In Image" class="w-full">
+                    <div class="absolute inset-0 bg-black opacity-10"></div>
                     {{-- Centered logo and text --}}
                     <div class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
                         {{-- Logo --}}

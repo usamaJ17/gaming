@@ -14,7 +14,7 @@
                     <img src="{{ asset('images/background.jpg') }}" alt="Logged In Image" class="w-full">
                     <div class="absolute inset-0 bg-black opacity-20"></div>
                     {{-- Two Rows --}}
-                    <div class="grid grid-cols-2 gap-5 absolute inset-0 m-7">
+                    <div class="grid grid-cols-2 gap-20 absolute inset-0 m-20">
                         {{-- First Row --}}
                         <div class="col-span-2 sm:col-span-1 bg-gray-300 bg-opacity-50 p-4 rounded relative">
                             <p class="text-white uppercase italic absolute top-3 left-3" style="font-family: 'Oswald', sans-serif;">Settings</p>

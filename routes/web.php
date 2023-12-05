@@ -23,8 +23,6 @@ Route::get('/', function () {
     }
 });
 
-Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
-Route::get('/home', [DashboardController::class, 'home'])->name('home');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -34,6 +32,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/fourm', [DashboardController::class, 'fourm'])->name('fourm');
     Route::get('/myoffice', [DashboardController::class, 'myoffice'])->name('myoffice');
     Route::get('/user-profile', [DashboardController::class, 'userProfile'])->name('user_profile');
+    Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
+    Route::get('/home', [DashboardController::class, 'home'])->name('home');
 });
 
 require __DIR__.'/auth.php';

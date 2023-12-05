@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        {!! htmlScriptTagJsApi() !!}
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
@@ -14,7 +15,12 @@
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
         <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark/dark.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
     </head>
     <body class="font-sans text-gray-900 antialiased">
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
@@ -30,8 +36,11 @@
         </div>
         <script>
             $(document).ready(function() {
-                console.log('asd');
                 $('.select2').select2();
+                flatpickr('.flatpicker', {
+                    dateFormat: 'Y-m-d',
+                    theme: 'dark',
+                });
             });
         </script>
     </body>

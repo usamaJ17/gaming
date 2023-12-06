@@ -23,6 +23,14 @@ Route::get('/', function () {
     }
 });
 
+Route::get('/test', function () {
+    if (Auth::check()) {
+        return redirect('/home');
+    } else {
+        return view('auth.login');
+    }
+})->name('test');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

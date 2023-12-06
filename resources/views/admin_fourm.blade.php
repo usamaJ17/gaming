@@ -4,15 +4,17 @@
         <div class="w-full sm:w-1/5 bg-gray-800 text-white p-2">
             <!-- Search Bar -->
             <br>
-            <input type="text" placeholder="Search" class="pl-8 pr-2 py-2 border bg-gray-700 rounded mb-4 text-gray-100 w-full sm:w-48">
+            <input type="text" placeholder="Search" class="pl-8 pr-2 py-2 border bg-gray-700 rounded mb-4 text-gray-100 w-full">
             
             <!-- Green Card -->
-            <div class="tweet-embed">
-                <!-- Example: Twitter Embed -->
-                <blockquote class="twitter-tweet" data-lang="en" data-theme="dark">
-                    <p lang="en" dir="ltr">Great to have Jensen Huang from <a href="https://twitter.com/nvidia?ref_src=twsrc%5Etfw">@nvidia</a> on stage today, as we announced our expanded collaboration to deliver GPU-based solutions. <a href="https://twitter.com/awscloud?ref_src=twsrc%5Etfw">@awscloud</a> will be the first provider to bring NVIDIA GH200 Grace Hopper Superchips with new multi-node NVLink technology to the cloud. Plus, our… <a href="https://t.co/gCHvknTegh">pic.twitter.com/gCHvknTegh</a></p>&mdash; Adam Selipsky (@aselipsky) <a href="https://twitter.com/aselipsky/status/1729689359568499180?ref_src=twsrc%5Etfw">November 29, 2023</a>
-                </blockquote>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div class="">
+                <div class="tweet-embed">
+                    <!-- Example: Twitter Embed -->
+                    <blockquote class="twitter-tweet" data-lang="en" data-theme="dark">
+                        <p lang="en" dir="ltr">Great to have Jensen Huang from <a href="https://twitter.com/nvidia?ref_src=twsrc%5Etfw">@nvidia</a> on stage today, as we announced our expanded collaboration to deliver GPU-based solutions. <a href="https://twitter.com/awscloud?ref_src=twsrc%5Etfw">@awscloud</a> will be the first provider to bring NVIDIA GH200 Grace Hopper Superchips with new multi-node NVLink technology to the cloud. Plus, our… <a href="https://t.co/gCHvknTegh">pic.twitter.com/gCHvknTegh</a></p>&mdash; Adam Selipsky (@aselipsky) <a href="https://twitter.com/aselipsky/status/1729689359568499180?ref_src=twsrc%5Etfw">November 29, 2023</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
             </div>
             <br>
             
